@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <title>Search</title>
+            <style>
+              body {
+                background: #000000;
+                margin: 0;
+                position:relative;
+                left:0px;
+                top: 75px;
+              }
+              .bar {
+                  display: block;
+                  color: White;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                  font-size: 17px;
+                }
+              .bar input[type=text] {
+                  position: absolute;
+                  top: 355px;
+                  left: 575px;
+                  height: 30px;
+                  width: 400px;
+                  padding: 6px;
+                  margin-top: 8px;
+                  margin-right: 20px;
+                  font-size: 17px;
+                  border: 0px solid white;
+                  border-radius: 50px;
+                  position:relative;
+                  left: 60px;
+                  top: 0px;
+                }
+              .bar input[type=submit] {
+                  float: inherit;
+                  border :2px solid white;
+                  position:relative;
+                  left: -225px;
+                  top: 50px;
+
+              }
+                .tab {
+                  overflow: hidden;
+                  background-color: #171717;
+                  position:relative;
+                  left:0px;
+                  top:-75px;
+                }
+
+                .tab button {
+                  background-color: inherit;
+                  color: white;
+                  float: left;
+                  border: none;
+                  outline: none;
+                  cursor: pointer;
+                  padding: 14px 16px;
+                  transition: 0.3s;
+                }
+
+                .tab button:hover {
+                  background-color: #303030;
+                }
+
+                .tab button.active {
+                  background-color: #ccc;
+                }
+
+                .tabcontent {
+                  display: none;
+                  padding: 6px 12px;
+                  border: 1px solid #ccc;
+                  border-top: none;
+                }
+
+            </style>
+        </head>
+    <body>
+        <div class="tab">
+          <button class="tablinks" onclick="location.href='https://ide-79923b2231694dd9900d3c2efc10ec2b-8080.cs50.ws/google.html';">Search</button>
+          <button class="tablinks" onclick="location.href='https://ide-79923b2231694dd9900d3c2efc10ec2b-8080.cs50.ws/images.html';">Images</button>
+          <button class="tablinks" onclick="location.href='https://ide-79923b2231694dd9900d3c2efc10ec2b-8080.cs50.ws/advanced.html';">Advanced</button>
+        </div>
+    </body>
+    <body>
+        <div id="Search" class="bar">
+            <img src="https://ide-79923b2231694dd9900d3c2efc10ec2b-8080.cs50.ws/3b1cfd9a69ae93a0a19d72bbaf231651.png" alt="Girl in a jacket" width="250" height="75">
+            <h1>Search</h1>
+            <form action="https://google.com/search">
+                <input type="text" placeholder="  Search Doogle or type a URL" name="q">
+                <input type="submit" value="Doogle Search">
+            </form>
+        </div>
+    </body>
+</html>
